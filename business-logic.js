@@ -18,3 +18,7 @@ var business = {
 		return newStates;		
 	}
 };
+
+module.exports = {
+		business
+}

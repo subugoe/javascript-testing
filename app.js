@@ -2,10 +2,7 @@
 
 var domAccess = {
 		applyStates: function (newStates) {
-			for (var i = 0; i < newStates.length; i++) {
-				var current = newStates[i];
-				this[current.method](current.selector, current.value);
-			}
+			newStates.forEach((el) => this[el.method](el.selector, el.value));
 		},
 		removeClass: function(selector, value) {
 			$(selector).removeClass(value);
