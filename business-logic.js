@@ -24,7 +24,7 @@ var business = {
 		} else if (operator === "plus") {
 			result = parseInt(number1) + parseInt(number2);
 		} else {
-			result = "Error";
+			result = "Error (unknown operator)";
 		}
 		var newStates = [
 			{ selector: "#result", method: "setText", value: "Result: " + result }
