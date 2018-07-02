@@ -2,10 +2,19 @@
 <html>
   <head>
     <title>Titel</title>
+    <script src="business-logic.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="app.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
-    <p>Inhalt</p>
+   <button id="openButton">Open</button>
+   <button id="closeButton" class="hidden">Close</button>
+   
+  <div id="mainArea" class="hidden">
+  	<input type="number" id="firstNumber" />
+  	<input type="number" id="secondNumber" />
+  	<button id="computeButton">Compute</button>
+  </div>
   </body>
 </html>
