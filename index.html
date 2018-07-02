@@ -14,7 +14,14 @@
   <div id="mainArea" class="hidden">
   	<input type="number" id="firstNumber" />
   	<input type="number" id="secondNumber" />
+  	<div id="radioButtons">
+  		<input type="radio" id="mult" name="operand" value="mult" checked>
+  		<label for="mult">*</label>
+  		<input type="radio" id="plus" name="operand" value="plus">
+  		<label for="plus">+</label>
+  	</div>
   	<button id="computeButton">Compute</button>
+  	<span id="result"></span>
   </div>
   </body>
 </html>

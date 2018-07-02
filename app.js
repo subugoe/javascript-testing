@@ -9,6 +9,9 @@ var domAccess = {
 		},
 		addClass: function (selector, value) {
 			$(selector).addClass(value);
+		},
+		setText: function (selector, value) {
+			$(selector).html(value);
 		}
 };
 
@@ -19,6 +22,14 @@ $(document).ready(function () {
 		});
 		$("#closeButton").click(function () {
 			var newStates = business.closeMainArea();
+			domAccess.applyStates(newStates);
+		});
+		$("#computeButton").click(function () {
+			var number1 = $("#firstNumber").val();
+			var number2 = $("#secondNumber").val();
+			var operator = $("#radioButtons input[name='operand']:checked").val();
+			
+			var newStates = business.compute(number1, number2, operator);
 			domAccess.applyStates(newStates);
 		});
 });
