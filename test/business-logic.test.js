@@ -1,4 +1,4 @@
-business = require("../scripts/business-logic").business;
+business = require("../app/scripts/business-logic").business;
 expect = require("chai").expect;
 
 describe("business logic", function () {
