@@ -33,6 +33,8 @@ var business = {
 	}
 };
 
-module.exports = {
+if (typeof module != 'undefined') {
+	module.exports = {
 		business
+	}
 }
