@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Titel</title>
-    <script src="scripts/business-logic.js"></script>
-    <script src="scripts/dom-changer.js"></script>
-    <script src="scripts/event-handlers.js"></script>
-    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
-  </head>
-  <body>
-   <button id="openButton">Open</button>
-   <button id="closeButton" class="hidden">Close</button>
-   
+
+<head>
+  <title>Titel</title>
+  <script src="scripts/business-logic.js"></script>
+  <script src="scripts/dom-changer.js"></script>
+  <script src="scripts/event-handlers.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+</head>
+
+<body>
+  <button id="openButton">Open</button>
+  <button id="closeButton" class="hidden">Close</button>
+
   <div id="mainArea" class="hidden">
-  	<input type="number" id="firstNumber" />
-  	<input type="number" id="secondNumber" />
-  	<div id="radioButtons">
-  		<input type="radio" id="mult" name="operand" value="mult" checked>
-  		<label for="mult">*</label>
-  		<input type="radio" id="plus" name="operand" value="plus">
-  		<label for="plus">+</label>
-  	</div>
-  	<button id="computeButton">Compute</button>
-  	<span id="result"></span>
+    <input type="number" id="firstNumber" />
+    <input type="number" id="secondNumber" />
+    <div id="radioButtons">
+      <input type="radio" id="mult" name="operand" value="mult" checked>
+      <label for="mult">*</label>
+      <input type="radio" id="plus" name="operand" value="plus">
+      <label for="plus">+</label>
+    </div>
+    <button id="computeButton">Compute</button>
+    <span id="result"></span>
   </div>
-  </body>
+</body>
+
 </html>
