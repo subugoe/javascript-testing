@@ -4,9 +4,7 @@ var domChanger = {
 	applyStates: function (newStates) {
 		newStates.forEach(state => {
 			const elemsToChange = document.querySelectorAll(state.selector);
-			for (let i = 0; i < elemsToChange.length; i++) {
-				this[state.method](elemsToChange[i], state.value);
-			}
+			elemsToChange.forEach(elem => this[state.method](elem, state.value));
 		});
 	},
 	removeClass: function(element, className) {
