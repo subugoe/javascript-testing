@@ -1,6 +1,6 @@
 'use strict';
 
-var domChanger = {
+const domChanger = {
 	applyStates: function (newStates) {
 		newStates.forEach(state => {
 			const elemsToChange = document.querySelectorAll(state.selector);

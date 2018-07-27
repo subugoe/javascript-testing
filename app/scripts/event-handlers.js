@@ -9,19 +9,19 @@ document.addEventListener('DOMContentLoaded', function() {
 	}
 	
 	id("openButton").onclick = function () {
-		var newStates = business.openMainArea();
+		const newStates = business.openMainArea();
 		domChanger.applyStates(newStates);
 	};
 	id("closeButton").onclick = function() {
-		var newStates = business.closeMainArea();
+		const newStates = business.closeMainArea();
 		domChanger.applyStates(newStates);
 	};
 	id("computeButton").onclick = function () {
-		var number1 = id("firstNumber").value;
-		var number2 = id("secondNumber").value;
-		var operator = select("input[name='operand']:checked").value;
+		const number1 = id("firstNumber").value;
+		const number2 = id("secondNumber").value;
+		const operator = select("input[name='operand']:checked").value;
 
-		var newStates = business.compute(number1, number2, operator);
+		const newStates = business.compute(number1, number2, operator);
 		domChanger.applyStates(newStates);
 	};
 });
