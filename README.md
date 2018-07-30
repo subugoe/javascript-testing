@@ -52,7 +52,7 @@ execute this code inside of a Node.js environment and thus to unit-test it.
 
 ## Unit testing
 
-To execute the tests, run the following commands:
+To execute the tests, run the following commands (the one in parentheses only the first time after cloning):
 
 (```npm install```)
 
