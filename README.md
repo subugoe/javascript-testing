@@ -52,13 +52,15 @@ execute this code inside of a Node.js environment and thus to unit-test it.
 
 ## Unit testing
 
-To execute the tests, run the following command:
+To execute the tests, run the following commands:
+
+(```npm install```)
 
 ```npm test```
 
 Again, you can use Docker as an alternative if you don't have a Node.js environment installed:
 
-```docker-compose run command npm install```
+(```docker-compose run command npm install```)
 
 ```docker-compose run command npm test```
 
